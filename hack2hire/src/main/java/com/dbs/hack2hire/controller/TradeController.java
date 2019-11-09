@@ -1,5 +1,7 @@
 package com.dbs.hack2hire.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +19,8 @@ public class TradeController {
 	private TradeService tradeService;
 	
 	@PostMapping(path = "/getReports", consumes = "application/json", produces = "application/json")
-    public Report getReports(Criteria criteria) {
+    public List<Report> getReports(Criteria criteria) {
 		
-		
-		return null;
+		return tradeService.getReports(criteria);
     }
 }
