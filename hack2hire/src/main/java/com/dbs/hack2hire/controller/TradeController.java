@@ -17,7 +17,8 @@ public class TradeController {
 	
 	@PostMapping(path = "/getReports", consumes = "application/json", produces = "application/json")
     public Report getReports(Criteria criteria) {
-
+		
+		
 		return null;
     }
 }
