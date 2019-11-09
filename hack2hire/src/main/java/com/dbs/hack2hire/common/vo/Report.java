@@ -1,5 +1,8 @@
-package com.dbs.hack2hire.hack2hire.common.vo;
+package com.dbs.hack2hire.common.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Report {
 
     private String stockName;
