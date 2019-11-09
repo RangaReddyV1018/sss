@@ -15,7 +15,7 @@ public class YTDEntity {
     @Column(name="id")
 	private int id;
 	
-	@Column(name="id")
+	@Column(name="stock Name")
 	private String stockName ;
 	
 	@Column(name="id")
