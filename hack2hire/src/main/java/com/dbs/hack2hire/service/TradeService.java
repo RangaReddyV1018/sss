@@ -10,7 +10,7 @@ import com.dbs.hack2hire.common.vo.Report;
 @Service
 public class TradeService {
 	
-	@Autowired YTDReport ytdreport;
+	//@Autowired YTDReport ytdreport;
 	
 	public Report getReports(Criteria criteria) {
 		

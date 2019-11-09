@@ -13,7 +13,8 @@ import com.dbs.hack2hire.service.TradeService;
 @RequestMapping(path = "/trade")
 public class TradeController {
 
-	@Autowired private TradeService tradeService;
+	@Autowired 
+	private TradeService tradeService;
 	
 	@PostMapping(path = "/getReports", consumes = "application/json", produces = "application/json")
     public Report getReports(Criteria criteria) {
