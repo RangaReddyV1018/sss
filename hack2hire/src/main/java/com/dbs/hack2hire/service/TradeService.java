@@ -84,7 +84,7 @@ public class TradeService {
 			}
 		}
 		for(FIDEntity entity : fidEntityList) {
-			String key = entity.getISIN()+entity.getISIN().toUpperCase();
+			String key = entity.getISIN()+entity.getBulSellIndicator().toUpperCase();
 			if(finalReports.containsKey(key)) {
 				DayReport existing = finalReports.get(key);
 				existing.setSaleID(existing.getSaleID() + ";" + entity.getTradeId());
